@@ -104,3 +104,10 @@ disabled .button button:active {
 .message.active {
   display: block;
 }
+
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
