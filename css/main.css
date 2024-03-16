@@ -40,11 +40,27 @@ header {
 }
 
 .input_field {
+    position: relative;
   height: 45px;
   margin-top: 15px;
   width: 100%;
 }
-
+.refresh_button{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: #3600B3;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.refresh_button:active{
+    transform:translateY(-50%) scale(0.98);
+}
 .input_field input,
 .button button{
     height: 100%;
