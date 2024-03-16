@@ -7,21 +7,77 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background:rgb(54, 0, 179);
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(54, 0, 179);
 }
 
-.container{
-    position: relative;
-    background:#fff;
-    max-width: 300px;
-    border-radius: 12px;
+.container {
+  position: relative;
+  background: #fff;
+  max-width: 300px;
+  border-radius: 12px;
+  width: 100%;
+  padding: 15px 25px 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input_field {
+  height: 45px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.input_field {
+  height: 45px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.input_field input,
+.button button{
+    height: 100%;
     width: 100%;
-    padding: 15px 25px 25px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+}
+.input_field input{
+    padding: 0 15px;
+    border: 1x solid rgba(0, 0, 0, 0.1);
 }
 
+.captcha_box input{
+    color: #6b6b6b;
+    font-size: 22px;
+    pointer-events: none;
+}
+.captcha_input input:focus{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) ;
+
+}
+.message{
+    font-size: 14px;
+    margin: 14px 0;
+    color: #826afb;
+    display: none;
+}
+
+.button button{
+    background:#3600B3 ;
+    color: #fff;
+    cursor: pointer;
+}
+.button button:active{
+    transform:  scale(0.99);
+}
