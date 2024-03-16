@@ -40,60 +40,67 @@ header {
 }
 
 .input_field {
-    position: relative;
+  position: relative;
   height: 45px;
   margin-top: 15px;
   width: 100%;
 }
-.refresh_button{
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    background: #3600B3;
-    height: 30px;
-    width: 30px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
+.refresh_button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: #3600b3;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
 }
-.refresh_button:active{
-    transform:translateY(-50%) scale(0.98);
+.refresh_button:active {
+  transform: translateY(-50%) scale(0.98);
 }
 .input_field input,
-.button button{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
+.button button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
 }
-.input_field input{
-    padding: 0 15px;
-    border: 1x solid rgba(0, 0, 0, 0.1);
-}
-
-.captcha_box input{
-    color: #6b6b6b;
-    font-size: 22px;
-    pointer-events: none;
-}
-.captcha_input input:focus{
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) ;
-
-}
-.message{
-    font-size: 14px;
-    margin: 14px 0;
-    color: #826afb;
-    display: none;
+.input_field input {
+  padding: 0 15px;
+  border: 1x solid rgba(0, 0, 0, 0.1);
 }
 
-.button button{
-    background:#3600B3 ;
-    color: #fff;
-    cursor: pointer;
+.captcha_box input {
+  color: #6b6b6b;
+  font-size: 22px;
+  pointer-events: none;
 }
-.button button:active{
-    transform:  scale(0.99);
+.captcha_input input:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+.message {
+  font-size: 14px;
+  margin: 14px 0;
+  color: #826afb;
+  display: none;
+}
+
+.button button {
+  background: #3600b3;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+disabled .button button:active {
+  transform: scale(0.99);
+}
+.button.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.message.active {
+  display: block;
 }
